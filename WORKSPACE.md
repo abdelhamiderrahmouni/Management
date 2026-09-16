@@ -1,6 +1,6 @@
 # WORKSPACE — Management
 
-Purpose: executive management of employment projects — goals, planning,
+Purpose: executive management of projects — goals, planning,
 priorities, milestones, decisions, and follow-ups.
 
 ## How this workspace runs
@@ -29,12 +29,15 @@ priorities, milestones, decisions, and follow-ups.
 
 ## Portfolio register
 
-> One row per project. Update the "Last reviewed" date on every
-> `project-review` run.
+> One row per project. Update both dates on every `project-review` run:
+> **Last activity** = the date of the most recent real change found
+> (ClickUp status change, task created/closed, decision, meeting note) —
+> the date it happened, not today. **Last reviewed** = today. Staleness
+> is judged against Last activity: no movement in ~2 weeks = stale.
 
-| Project | One-line purpose | Status | Next milestone | Last reviewed |
-|---|---|---|---|---|
-| _(none yet)_ | | | | |
+| Project | One-line purpose | Status | Next milestone | Last activity | Last reviewed |
+|---|---|---|---|---|---|
+| _(none yet)_ | | | | | |
 
 ## Standing notes
 

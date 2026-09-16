@@ -25,14 +25,19 @@ The reconciliation loop between the two sources of truth. Run per project
    - Blocked tasks and what blocks them.
    - Unowned or undated commitments.
    - Decisions still marked `Proposed` in `DECISIONS.md`.
-   - Stale projects (no movement in ~2 weeks) — say so bluntly.
+   - Stale projects — register "Last activity" older than ~2 weeks; say
+     so bluntly. Verify against live ClickUp state (recently updated
+     tasks) and recent file changes, not memory or the register alone.
    - Cross-project collisions: shared deadlines, same people, competing
      priorities.
 5. **Propose, don't unilaterally reorder.** Suggest priority changes as a
    short list ("do these 3, defer these 2 because …"). Apply to ClickUp
    only after the user agrees.
-6. **Update records.** Set "Last reviewed" to today in the `WORKSPACE.md`
-   register row for each reviewed project.
+6. **Update records.** In the `WORKSPACE.md` register row for each
+   reviewed project: set "Last reviewed" to today, and set "Last
+   activity" to the date of the most recent change you actually verified
+   in ClickUp or the project's files — not today, unless something
+   really did change today.
 7. **Report** in the standing format: Needs your attention → Status →
    Changes I made.
 
