@@ -4,18 +4,25 @@ This workspace is a **portable skeleton** for executive project management
 with OpenCode + ClickUp. It is self-contained: everything it needs lives in
 this folder, with no absolute paths.
 
-## Quick install (from GitHub)
+## Quick install (one command)
+
+Using curl, or wget if you prefer:
 
 ```
-git clone <repo-url> Management
-cd Management
-./install.sh
+curl -fsSL https://raw.githubusercontent.com/abdelhamiderrahmouni/Management/main/install.sh | bash -s -- [parent-dir] [name]
+wget -qO-  https://raw.githubusercontent.com/abdelhamiderrahmouni/Management/main/install.sh | bash -s -- [parent-dir] [name]
 ```
 
-The script detaches your copy from the template's git history, checks
-prerequisites, walks you through ClickUp auth, and prints the next steps.
-The sections below describe the same flow by hand (and what to do without
-the script).
+- `parent-dir` — where to create the folder (default: current directory)
+- `name` — folder name (default: `Management`)
+
+Example: `... | bash -s -- ~/Projects Acme` creates `~/Projects/Acme`,
+replaces the template's git history with a fresh local repo, checks
+tools, offers ClickUp auth, and prints the next steps.
+
+Prefer clone-and-run? `git clone <repo-url> <dir> && cd <dir> && ./install.sh`
+does the same, prompting before touching history. The sections below cover
+the manual flow without any script.
 
 ## First run (this copy)
 
