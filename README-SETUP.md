@@ -4,6 +4,19 @@ This workspace is a **portable skeleton** for executive project management
 with OpenCode + ClickUp. It is self-contained: everything it needs lives in
 this folder, with no absolute paths.
 
+## Quick install (from GitHub)
+
+```
+git clone <repo-url> Management
+cd Management
+./install.sh
+```
+
+The script detaches your copy from the template's git history, checks
+prerequisites, walks you through ClickUp auth, and prints the next steps.
+The sections below describe the same flow by hand (and what to do without
+the script).
+
 ## First run (this copy)
 
 1. `git init` — already done. Commit whenever you like; the repo also makes
