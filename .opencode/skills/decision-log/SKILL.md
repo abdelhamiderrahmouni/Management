@@ -18,9 +18,13 @@ Decisions are the most valuable project history. Capture them while fresh.
    - **Consequences / implications**: what this commits us to, enables,
      or rules out.
    - **Date** and (optionally) who decided.
+   - **Status**: `Proposed` if the call isn't final yet, `Accepted` if
+     it is.
 3. **Append to `projects/<Project>/DECISIONS.md`** in the table, next
    number in sequence. Never reorder or rewrite past entries — decisions
-   are immutable history; corrections become new entries.
+   are immutable history; corrections become new entries. If the new
+   decision replaces an earlier one, advance that row's Status to
+   `Superseded by #N` — the only edit ever allowed on an existing row.
 4. **Link consequences to work.** If the decision spawns tasks, milestones,
    or invalidates existing ClickUp tasks, say so and offer to make those
    changes (create tasks, update `PROJECT.md`).
@@ -32,3 +36,5 @@ Decisions are the most valuable project history. Capture them while fresh.
   "none considered" rather than inventing options.
 - Distinguish *decisions* (choices made) from *facts* (things that
   happened to us). Only the former go in DECISIONS.md.
+- Flip `Proposed` → `Accepted` once the final call is made; rows left
+  `Proposed` get flagged in every review until resolved.

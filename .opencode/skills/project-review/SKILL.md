@@ -24,7 +24,7 @@ The reconciliation loop between the two sources of truth. Run per project
    - Overdue and at-risk tasks.
    - Blocked tasks and what blocks them.
    - Unowned or undated commitments.
-   - Pending decisions sitting in `DECISIONS.md` without a resolution.
+   - Decisions still marked `Proposed` in `DECISIONS.md`.
    - Stale projects (no movement in ~2 weeks) — say so bluntly.
    - Cross-project collisions: shared deadlines, same people, competing
      priorities.
